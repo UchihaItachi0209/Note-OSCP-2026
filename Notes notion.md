@@ -155,6 +155,11 @@ impacket-lookupsid svc_apache:'S@Ss!K@*t13'@'flight.htb'
 ---
 
 ### SNMP Enum
+**Scan cổng UDP**
+```
+sudo nmap -sU --top-port=100 192.168.64.151
+sudo nmap -sU -p 161 -sV --script=snmp* -T4 192.168.64.151 
+```
 
 **Bruteforce common string**
 ```bash
